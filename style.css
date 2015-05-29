@@ -1,0 +1,95 @@
+/* No, I didn't use SASS. Shut up. */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background: #2e89d5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Roboto;
+	color: white;
+}
+body.running {
+	background: #ce2636;
+}
+body.running .intro {
+	display: none;
+}
+body.running .counter {
+	display: block;
+}
+article {
+	font-size: 60px;
+	text-align: center;
+}
+.intro {
+	display: block;
+}
+.intro h1 {
+	margin-bottom: 20px;
+}
+.counter {
+	display: none;
+}
+.counter h1 {
+	font-size: 90px;
+}
+
+h1 {
+	font-size: 70px;
+	line-height: 140%;
+	font-weight: normal;
+}
+h1 strong {
+	font-size: 1.2em;
+}
+p {
+	font-size: 22px;
+}
+form {
+	max-width: 350px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+label {
+	display: block;
+	text-align: left;
+	font-size: 18px;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+input {
+	display: block;
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+	color: #333;
+	padding: 13px 18px;
+	font-size: 26px;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+input::after {
+	content:"$";
+
+}
+button {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	padding: 10px 15px;
+	font-size: 24px;
+	border: none;
+	border-radius: 3px;
+	background: #333;
+	color: white;
+	cursor: pointer;
+}
